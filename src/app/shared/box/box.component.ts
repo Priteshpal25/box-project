@@ -39,7 +39,6 @@ export class BoxComponent implements OnInit {
 
   selected(){
     this.isSelected = true;
-    console.log(this.isSelected);
   }
 
   
@@ -87,7 +86,7 @@ export class BoxComponent implements OnInit {
   addEventListener(){
     // const self = this;
     this.handleKeypress = (event:any) =>{
-        console.log(event);
+
         event.preventDefault();
         const keyCode = event.keyCode;
         const el:HTMLElement = this.element.nativeElement.querySelector('.box.selected');

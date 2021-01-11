@@ -19,13 +19,12 @@ export class ActionsComponent implements OnInit {
   ngOnInit() {
     this._toggleService.RemoveId
         .subscribe(id =>{
-          console.log(id);
+         
           if(id){
             const removeId = id;
-            console.log('inside');
             this.boxArr = this.boxArr.filter(item => item.id !== removeId);
           }
-          console.log(this.boxArr);
+         
         })
   }
 

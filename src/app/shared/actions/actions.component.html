@@ -2,7 +2,7 @@
     <button class="add-box action-btn" (click)="addBox()">
       Add Box
     </button>
-    <button class="toggle-listener action-btn" [class.danger]="toggleStatus" (click)="toggleListener()">{{toggleStatus ? 'Key Gestures Off' : 'Key Gestures On'}}</button>
+    <button class="toggle-listener action-btn" [class.danger]="toggleStatus" (click)="toggleListener()">{{toggleStatus ? 'Turn Off Key Gestures' : 'Turn On Key Gestures'}}</button>
   </div>
 <div class="fence" id="fence">
     <ng-template ngFor let-box [ngForOf]='boxArr' [ngForTrackBy]="trackByFn">

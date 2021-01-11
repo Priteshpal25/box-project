@@ -1,0 +1,46 @@
+
+.fence{
+    display: flex;
+    flex-grow: 3;
+    border: 1px solid black;
+    flex-flow: row wrap;
+    align-content: baseline;
+    min-height: 55vh;
+    /* margin: 0 0 50px 0; */
+    position: relative;
+}
+
+.actions{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    align-content: flex-end;
+    justify-content: flex-end;
+    padding: 1em 0;
+}
+
+.add-box{
+    background: #27a3e8;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-weight: 700;
+}
+.action-btn{
+    margin: 1em;
+    padding: 1em;
+}
+
+.toggle-listener{
+    background:#39c439;
+    border: none;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+}
+.danger{
+    background: #F44336;
+}
+.alert{
+    border: 3px solid red;
+}

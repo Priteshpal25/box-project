@@ -1,0 +1,11 @@
+<div class="actions">
+    <button class="add-box action-btn" (click)="addBox()">
+      Add Box
+    </button>
+    <button class="toggle-listener action-btn" [class.danger]="toggleStatus" (click)="toggleListener()">{{toggleStatus ? 'Key Gestures Off' : 'Key Gestures On'}}</button>
+  </div>
+<div class="fence" id="fence">
+    <ng-template ngFor let-box [ngForOf]='boxArr' [ngForTrackBy]="trackByFn">
+      <box-component [zIndex]='box?.zIndex' [id]="box?.id" [color]="box?.color"></box-component>
+    </ng-template>
+  </div>
